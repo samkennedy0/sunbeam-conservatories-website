@@ -2,29 +2,63 @@
 <html lang="en-GB">
   
 <head>
-  <link rel="stylesheet" href="../css/styles.css">
   <title>Tonys Website</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="Sunbeam Conservatories">
+  <meta name="keywords" content="Sunbeam conservatories, Conservatories, Sunbeam, coventry">
+  <meta name="author" content="Sam Kennedy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <h1 id="header">Tonys Website</h1>
-
-  <div id="background1">
-    <h2>Sunbeam Conservatories<h2>
-    <h3>Coventry</h3>
+  <div>
+     <nav class="navbar navbar-default">
+        <div class ="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Sunbeam Conservatories</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">What we offer
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Example 1</a></li>
+                <li><a href="#">Example 2</a></li>
+                <li><a href="#">Example 3</a></li>
+              </ul>  
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+      </nav>
   </div>
-  
-  <p>Open Monday - Friday 8-5</p>
-  <p id="p01">Comptitive Pricing</p>
-  <p class="price">From £200</p>
-  <p class="price">to £2000</p>
-  <img src="../img/test.jpg" alt="test"> <!--width ="100" height="100"-->
+ 
 
-  <h2>What we offer</h2>
-  <ul>
-    <li>Example 1</li>
-    <li>Example 2</li>
-  </ul>
-  
+  </div>
+  <!--img src="../img/test.jpg" alt="test"--> <!--width ="100" height="100"-->
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Opening tiems</h3>
+          <p>Monday - Friday</p>
+          <p>8am - 9PM</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Contact Us</h3>
+          <p>Phone: example</p>
+          <p>Email: example</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>What we offer</h3>        
+          <p>Example</p>
+          <p>Example</p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
