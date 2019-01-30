@@ -1,5 +1,7 @@
 body {
     background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .column {
@@ -39,10 +41,19 @@ p1 {
     width: 50%;
 }
 
+.continer-fluid
+
 h1 {
     color: blue;
     font-family: verdana;
     font-size: 200%;
+}
+
+.contacth3{
+    text-align: center;
+}
+.imgallign {
+    align-content: center
 }
 
 h2{

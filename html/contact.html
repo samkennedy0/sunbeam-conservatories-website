@@ -7,6 +7,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      function _(id){ return document.getElementById(id); }
+      function submitForm(){
+        _("mybtn").disabled = true;
+        _("status").innerHTML = 'please wait ...';
+        var formdata = new FormData();
+        formdata.append( "n", _("n").value );
+        formdata.append( "e", _("e").value );
+        formdata.append( "m", _("m").value );
+        var ajax = new XMLHttpRequest();
+        ajax.open( "POST", "example.php" );
+        ajax.onreadystatechange = function() {
+          if(ajax.readyState == 4 && ajax.status == 200) {
+            if(ajax.responseText == "success"){
+              _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+            } else {
+              _("status").innerHTML = ajax.responseText;
+              _("mybtn").disabled = false;
+            }
+          }
+        }
+        ajax.send( formdata );
+      }
+  </script>
   <meta charset="utf-8">
   <meta name="description" content="Sunbeam Conservatories">
   <meta name="keywords" content="Sunbeam conservatories, Conservatories, Sunbeam, coventry">
@@ -46,10 +70,19 @@
 
   <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-7">
-      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.865893446888!2d-1.5304930841966327!3d52.40910667979329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b099e0502e9%3A0x62516422e6aa980d!2sKoco+Community+Resource+Centre!5e0!3m2!1sen!2suk!4v1548774906722" width="850" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+    <div class="col-sm-6">
+      <h3 class= "contacth3">Contact Form</h3>
+        <form id="my_form" onsubmit="submitForm(); return false;">
+            <label for="name">Name:</label>
+            <p><input id="n" class="form-control" placeholder="Name" required></p>
+            <label for="name">Email:</label>
+            <p><input id="e" class="form-control" placeholder="Email Address" type="email" required></p>
+            <label for="name">Message:</label>
+            <textarea id="m" class="form-control" rows="5"placeholder="write your message here" rows="10" columns="60" required></textarea>
+            <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+          </form>
   </div>
-  <div class="col-sm-5">
+  <div class="col-sm-6">
 
     <h4>Email: <span class="glyphicon glyphicon-envelope"></span></h4>
     <p>tonyparrott123@btinternet.com</p>
@@ -66,23 +99,17 @@
     <br/>
     <p1>Installing throughout the entire Midlands.</p1>
   </div>
-  </div>
 
-  <div class= "div1">
-      <h1>Input form</h1>
-
-      <form action="../php/formToEmail.php">
-        Enter your name:
-        <input name="tname" type="text">
-        Enter your email:
-        <input name="email" type="text" required>
-        <br><br>
-        <p>Enter your message:</p>
-        <textarea name="msessage" rows="10" cols="50">Enter any enquires here:</textarea>
-        <br><br>
-        <input type="submit">
-      </form>
   </div>
+  </br>
+  <br>
+  <br>
+  <div class="left">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.865893446888!2d-1.5304930841966327!3d52.40910667979329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b099e0502e9%3A0x62516422e6aa980d!2sKoco+Community+Resource+Centre!5e0!3m2!1sen!2suk!4v1548774906722" width="850" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+
+</div>
+
+  
 
   </div>
   <!--img src="../img/test.jpg" alt="test"--> <!--width ="100" height="100"-->
