@@ -4,11 +4,6 @@
     padding-right: 20px;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding:30px;
-}
 
 h3{
     text-align: center;
@@ -29,7 +24,6 @@ p1 {
 
 p2 {
     font: size 17px;
-    font-family: 
 }
 
 .col-sm-3{
@@ -99,10 +93,15 @@ footer {
 
 }
 
+.column1{
+    height: 400px
+    
+}
 #p01 {
     padding: 30px;
     font-family: courier;
     font-size: 160%; 
+    color: black
 }
 
 p.price {
