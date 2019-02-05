@@ -2,7 +2,7 @@
 <html lang="en-GB">
   
 <head>
-  <title>Tonys Website</title>
+  <title>Sunbeam Conservatories</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/slides.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,53 +17,126 @@
 </head>
 
 <body>
-  <div class="header" >
-    <img src="./img/header.png" alt="Header" class="center">
+  <div class="header">
+    <img src="./img/header5.png" width="100%" height="100px" alt="Header">
   </div>
 
   <div>
      <nav class="navbar navbar-light" style="background-color: #e3f2fd">
         <div class ="container-fluid">
           <div class="navbar-header">
-            <a class="pull-left" href="./index.html"><img src="./img/newlogo1.png" height="50" width="80"></a> 
+         <!----   <a class="pull-left" href="./index.html"><img src="./img/newlogo1.png" height="50" width="80"></a> >-->
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="./index.html">Home</a></li>
-            <!----<li><a href="./html/gallery.html">Gallery</a></li>-->
+            <li><a href="./html/gallery.html">Gallery</a></li>
             <li><a href="./html/about.html">About us</a></li>
             <li><a href="./html/contact.html">Contact us</a></li>
           </ul>
       </nav>
   </div>
+  <!-----
+  <div class="slider">
 
-  <h2>Welcome to the Sunbeam Conservatories Website!</h2>
-  <p id="p01">Commenced trading from  Coventry  in 1982 
-    on the back ofthe growing market for PVCu windows , 
-    doors and later conservatories; installing throughout 
-    the entire Midlands. <br><b>Contact us on: 07545 955511 <a href="./html/contact.html"> or use are contact form for a free quote</a></b></p>
+      <div id="img" >
+        <img class="img" src="./img/best10.jpg">
+      </div>
+  
+    </div>
+  -->
+  
+    <script>
+  
+      var images = ['./img/best4s.jpg', './img/best6s.jpg', './img/best5s.jpg'];
+  
+      var x = 0;
+  
+      var imgs = document.getElementById('img');
+  
+      setInterval(slider, 3000);
+  
+  
+      function slider() {
+  
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+  
+  
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+  
+  
+      }
+  
+  
+    </script>
+  
+  
+    <style type="text/css">
+      .slider {
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 5px 5px 10px grey;
+  
+      }
+  
+      .img {
+        height: 500px;
+        width: 100%;
+        animation: ani 2s linear;
+  
+      }
+  
+      @keyframes ani {
+        0% {
+          transform: scale(1.2);
+        }
+        10% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  
+  
+  
+
+  <h2>Welcome to the Sunbeam Conservatories & Windows Website!</h2>
+  <p id="p01" style="text-align:center">Sunbeam started in 1982<br> <br><b>Contact us on: 07545 955511 <a href="./html/contact.html"> or use our contact form for a free quote</a></b></p>
   
   
   </div>
   <div class="container-fluid" style="text-align: center">
       <div class="col-sm-4 paddingBottom" >
       <img src="./img/best7.jpg" width="70%">  
-      <p id="p01">We offer styles you will recognise, which include: Orangeries, 
-        Edwardian, Victorian, garden rooms, lean to`s loggias and skypod roofs. All designed with quality in mind in to last for at least 30 years</p>
+      <p id="p01">We offer styles you will recognise, which include:
+        Orangeries,
+        Edwardian conservatories,
+        Victorian conservatories,
+        Lean-to's,
+        Garden rooms</p>
+      
     
 
     </div>
   
     <div class="col-sm-4 paddingBottom" >
           <img src="./img/best9.jpg" width="70%">
-          <p id="p01">Our conservatories,  are designed with  quality in mind in to last for at least 30 years: with proper groundwork ,insulated bases with high quality brickwork;together with the best insulating, long life A rated sealed units. </p> 
+          <p id="p01">Our conservatories are designed with quality to mind to last over 30 years. With thorough groundwork, insulated bases and high quality brickwork, together with the best insulated long life A rated sealed units </p> 
       
 
     </div>
 
     <div class="col-sm-4 paddingBottom" >
         <img src="./img/best1.jpg" width="70%"
-        ><p id="p01">We always use  the best products available and install them to the best standards.<br> We are able to put you in touch with lenders offering flexible 
-          finance from around 3.5%A.P.R. - among the lowest in the U.K!</p>
+        ><p id="p01">We always use  the best products available and install them to the best standards<br></p>
         
 
     </div>
@@ -72,7 +145,7 @@
 
   </div>
 
-<h3>Take a look at some of are previous work in the gallery below:</h3>
+  <h3 style="text-align: center">Take a look at some of our previous work in the gallery below</h3>
   <ul class="slides" class="pull-left">
     <input type="radio" name="radio-btn" id="img-1" checked />
     <li class="slide-container">
@@ -164,7 +237,7 @@
           <div class="col-sm-4">
             <h3>Business hours</h3>
             <p>Monday - Friday</p>
-            <p>8am - 9PM</p>
+            <p>8am - 5PM</p>
             <a href="https://www.facebook.com/sunbeamconservatories"><img src="./img/facebook.png" height="30px" width="200px"></a>
           </div>
           <div class="col-sm-4">
@@ -175,10 +248,10 @@
           </div>
           <div class="col-sm-4">
             <h3>Where to find us</h3>        
-            <p>5a Koco Building <br />
-              15 The Arches <br />
-              Spon End <br />
-              Coventry  <br />
+            <p>Koco Building <br/>
+              15 The Arches <br/>
+              Spon End <br/>
+              Coventry  <br/>
               CV1 3JQ</p>
           </div>
         </div>

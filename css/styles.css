@@ -55,7 +55,7 @@ p2 {
 
 }
 .header {
-    background-color: #f1f1f1;
+    background-color: rgb(255, 255, 60);
     text-align: center;
     padding: 20px;
 }
@@ -99,9 +99,9 @@ footer {
 }
 #p01 {
     padding: 30px;
-    font-family: courier;
-    font-size: 160%; 
-    color: black
+    font-size: 17px;
+    font-family: 'Verdana, Geneva, sans-serif';
+    color: black;
 }
 
 p.price {
