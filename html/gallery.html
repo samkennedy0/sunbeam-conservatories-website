@@ -198,27 +198,19 @@
 </head>
 
 <body>
-  <div class="header" >
-    <img src="../img/header.png" alt="Header" class="center">
+  <div class="header" style="background-color: yellow" style="padding: 20px">
+    <img src="../img/header5.png" width="100%" height="100px" alt="Header">
   </div>
 
   <div>
      <nav class="navbar navbar-light" style="background-color: #e3f2fd">
         <div class ="container-fluid">
           <div class="navbar-header">
-            <a class="pull-left" href="../index.html"><img src="../img/newlogo1.png" height="50" width="80"></a> 
+         <!----   <a class="pull-left" href="./index.html"><img src="./img/newlogo1.png" height="50" width="80"></a> >-->
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="../index.html">Home</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Conservatories</a></li>
-                <li><a href="#">Windows</a></li>
-                <li><a href="#">Example 3</a></li>
-              </ul>  
-            </li>
+            <li><a href="../html/gallery.html">Gallery</a></li>
             <li><a href="../html/about.html">About us</a></li>
             <li><a href="../html/contact.html">Contact us</a></li>
           </ul>
@@ -261,13 +253,28 @@
       <img src="../img/best9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
+      <img src="../img/best14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-3">
+      <img src="../img/best11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-3">
+      <img src="../img/best12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-sm-3">
+      <img src="../img/best13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-3">
       <img src="../img/best10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
   </div>
   <!----<div class="col-sm-3">
-      <img src="../img/best7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="../img/best11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-      <img src="../img/best8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="../img/best12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
   </div>-->
 </div>
 
@@ -322,8 +329,28 @@
     </div>
 
   <div class="mySlides">
-    <div class="numbertext">10 / 10</div>
+    <div class="numbertext">10 / 14</div>
     <img src="../img/best10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 14</div>
+    <img src="../img/best11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 14</div>
+    <img src="../img/best12.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">13 / 14</div>
+    <img src="../img/best13.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">14 / 14</div>
+    <img src="../img/best14.jpg" style="width:100%">
   </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -334,49 +361,62 @@
     </div>
 
     <div class="container" style="background-color: black">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <img class="demo cursor" src="../img/best1.jpg" style="width:100%" onclick="currentSlide(1)" alt="best1">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <img class="demo cursor" src="../img/best2.jpg" style="width:100%" onclick="currentSlide(2)" alt="best2">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <img class="demo cursor" src="../img/best3.jpg" style="width:100%" onclick="currentSlide(3)" alt="best3">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <img class="demo cursor" src="../img/best4.jpg" style="width:100%" onclick="currentSlide(4)" alt="best4">
-        </div> 
+        </div>
+        <div class="col-sm-2">
+          <img class="demo cursor" src="../img/best5.jpg" style="width:100%" onclick="currentSlide(5)" alt="best4">
+      </div> 
+       <div class="col-sm-2">
+        <img class="demo cursor" src="../img/best6.jpg" style="width:100%" onclick="currentSlide(6)" alt="best4">
+      </div>  
     </div>
 
     <div class="container" style="background-color: black">
-        <div class="col-sm-3">
-            <img class="demo cursor" src="../img/best5.jpg" style="width:100%" onclick="currentSlide(5)" alt="best5">
-        </div>
-        <div class="col-sm-3">
-            <img class="demo cursor" src="../img/best6.jpg" style="width:100%" onclick="currentSlide(6)" alt="best6">
-        </div>
-        <div class="col-sm-3">
-            <img class="demo cursor" src="../img/best7.jpg" style="width:100%" onclick="currentSlide(7)" alt="best7">
-        </div>
-        <div class="col-sm-3">
-            <img class="demo cursor" src="../img/best8.jpg" style="width:100%" onclick="currentSlide(8)" alt="best8">
-        </div>
-    </div>
-
-    <div class="container" style="background-color: black">
-      <div class="col-sm-3">
-          <img class="demo cursor" src="../img/best9.jpg" style="width:100%" onclick="currentSlide(9)" alt="best5">
+      <div class="col-sm-2">
+          <img class="demo cursor" src="../img/best7.jpg" style="width:100%" onclick="currentSlide(7)" alt="best1">
       </div>
-      <div class="col-sm-3">
-          <img class="demo cursor" src="../img/best10.jpg" style="width:100%" onclick="currentSlide(10)" alt="best6">
+      <div class="col-sm-2">
+          <img class="demo cursor" src="../img/best8.jpg" style="width:100%" onclick="currentSlide(8)" alt="best2">
       </div>
-      <!---<div class="col-sm-3">
-          <img class="demo cursor" src="../img/best7.jpg" style="width:100%" onclick="currentSlide(7)" alt="best7">
+      <div class="col-sm-2">
+          <img class="demo cursor" src="../img/best9.jpg" style="width:100%" onclick="currentSlide(9)" alt="best3">
       </div>
-      <div class="col-sm-3">
-          <img class="demo cursor" src="../img/best8.jpg" style="width:100%" onclick="currentSlide(8)" alt="best8">
-      </div>-->
+      <div class="col-sm-2">
+          <img class="demo cursor" src="../img/best14.jpg" style="width:100%" onclick="currentSlide(14)" alt="best4">
+      </div>
+      <div class="col-sm-2">
+        <img class="demo cursor" src="../img/best11.jpg" style="width:100%" onclick="currentSlide(11)" alt="best4">
+    </div> 
+     <div class="col-sm-2">
+      <img class="demo cursor" src="../img/best12.jpg" style="width:100%" onclick="currentSlide(12)" alt="best4">
+    </div>  
   </div>
+
+
+  <div class="container" style="background-color: black">
+    <div class="col-sm-2">
+        <img class="demo cursor" src="../img/best13.jpg" style="width:100%" onclick="currentSlide(13)" alt="best5">
+    </div>
+    <div class="col-sm-2">
+        <img class="demo cursor" src="../img/best10.jpg" style="width:100%" onclick="currentSlide(10)" alt="best6">
+    </div>
+    <!----iv class="col-sm-3">
+        <img class="demo cursor" src="../img/best11.jpg" style="width:100%" onclick="currentSlide(11)" alt="best7">
+    </div>
+    <div class="col-sm-3">
+        <img class="demo cursor" src="../img/best12.jpg" style="width:100%" onclick="currentSlide(12)" alt="best8">
+    </div>-->
+</div>
     
   </div>
 </div>

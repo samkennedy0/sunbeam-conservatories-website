@@ -14,10 +14,11 @@
         _("status").innerHTML = 'please wait ...';
         var formdata = new FormData();
         formdata.append( "n", _("n").value );
+        formdata.append( "u", _("u").value );
         formdata.append( "e", _("e").value );
         formdata.append( "m", _("m").value );
         var ajax = new XMLHttpRequest();
-        ajax.open( "POST", "example.php" );
+        ajax.open( "POST", "contact.php" );
         ajax.onreadystatechange = function() {
           if(ajax.readyState == 4 && ajax.status == 200) {
             if(ajax.responseText == "success"){
@@ -39,32 +40,25 @@
 </head>
 
 <body>
-  <div class="header" >
-    <img src="../img/header.png" alt="Header" class="center">
-  </div>
-
-  <div>
-     <nav class="navbar navbar-light" style="background-color: #e3f2fd">
-        <div class ="container-fluid">
-          <div class="navbar-header">
-            <a class="pull-left" href="../index.html"><img src="../img/newlogo1.png" height="50" width="80"></a> 
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="../index.html">Home</a></li>
-            <!---<li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">What we offer
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Example 1</a></li>
-                <li><a href="#">Example 2</a></li>
-                <li><a href="#">Example 3</a></li>
-              </ul>  
-            </li>-->
-            <li><a href="about.html">About us</a></li>
-            <li><a href="../html/contact.html">Contact us</a></li>
-          </ul>
-      </nav>
-  </div>
+    <div class="header" style="background-color: yellow" style="padding: 20px">
+        <img src="../img/header5.png" width="100%" height="100px" alt="Header">
+      </div>
+    
+      <div>
+         <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+            <div class ="container-fluid">
+              <div class="navbar-header">
+             <!----   <a class="pull-left" href="./index.html"><img src="./img/newlogo1.png" height="50" width="80"></a> >-->
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../html/gallery.html">Gallery</a></li>
+                <li><a href="../html/about.html">About us</a></li>
+                <li><a href="../html/contact.html">Contact us</a></li>
+              </ul>
+          </nav>
+      </div>
+  
 
   <h2 class = "div1">Contact us</h2>
 
@@ -75,9 +69,9 @@
           <form id="my_form" onsubmit="submitForm(); return false;">
               <label for="name">Name:</label>
               <p><input id="n" class="form-control" placeholder="Name" required></p>
-              <label for="name">Email:</label>
-              <p><input id="n" class="form-control" placeholder="Number" required></p>
               <label for="name">Number:</label>
+              <p><input id="u" class="form-control" placeholder="Number" required></p>
+              <label for="name">Email:</label>
               <p><input id="e" class="form-control" placeholder="Email Address" type="email" required></p>
               <label for="name">Message:</label>
               <textarea id="m" class="form-control" rows="5"placeholder="write your message here" rows="10" columns="60" required></textarea>
@@ -96,10 +90,9 @@
         Spon End <br />
         Coventry  <br />
         CV1 3JQ</p>
-      <p1>Quotations and designs are free; we offer PVCu, aluminium and hardwood in all the latest colours i.e. white,cream, green, various timber shades,black and grey; together with the best insulating,long life A rated sealed units.</p1>
+      <p1>We offer conservatories, orangeries, windows and doors in pvc, shades of white; various woodgrain shades and special colours if required together with the best quality long life, A rated sealed units.</p1>
       <br/>
       <br/>
-      <p1>Installing throughout the entire Midlands.</p1>
     </div>
 
     </div>
