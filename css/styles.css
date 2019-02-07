@@ -5,7 +5,21 @@
     text-align: center;
     float: center;
 }
+.contactP {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
 
+.homeP {
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.imgs {
+    width: 100%;
+    height: 200px;
+}
 .contactBody {
     background-color: white;
     padding-left: 10%;
@@ -24,7 +38,7 @@
 
 }
 
-h3{
+.h3{
     text-align: center;
 }
 
@@ -93,7 +107,10 @@ h1 {
     font-family: verdana;
     font-size: 200%;
 }
-
+.h4 {
+    text-align: center; 
+    padding: 30px;
+}
 .contacth3{
     text-align: center;
 }
@@ -136,6 +153,10 @@ p.price {
     background-color: whitesmoke;
     color: slateblue;
     padding: 20px;
+}
+
+.footerP {
+    font-size: 17px;
 }
 
 .fa {
