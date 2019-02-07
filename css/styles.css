@@ -6,6 +6,16 @@
     float: center;
 }
 
+.contactBody {
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.break {
+    padding: 50px;
+}
+
 
 .bodyclass {
     background-color: white;
@@ -97,7 +107,7 @@ h2{
 }
 
 .h2{
-    padding: 10px;
+    padding: 10Spx;
     text-align: center
 }
 
