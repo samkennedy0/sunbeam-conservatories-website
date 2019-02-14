@@ -5,6 +5,19 @@
     text-align: center;
     float: center;
 }
+
+/*body { 
+    background: url(../img/cream_dust.png) repeat 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}*/
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
 .contactP {
     font-size: 20px;
     font-weight: bold;
@@ -124,6 +137,7 @@ h2{
 
 .h2{
     padding: 10Spx;
+    font-family: Georgia, serif;
     text-align: center
 }
 
