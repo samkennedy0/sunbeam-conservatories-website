@@ -35,7 +35,7 @@
           display: none;
           position: fixed;
           z-index: 1;
-          padding-top: 100px;
+          padding-top: 50px;
           left: 0;
           top: 0;
           overflow: auto;
@@ -88,7 +88,7 @@
         .next {
           cursor: pointer;
           position: absolute;
-          top: 25%;
+          top: 50%;
           width: auto;
           padding: 16px;
           margin-top: -50px;
@@ -207,17 +207,26 @@
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="../index.html">Home</a></li>
-            <li><a href="../html/gallery.html">Gallery</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../html/gallery.html">Conservatories</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../html/gallery2.html">Buildings</a>
+              </div>
             <li><a href="../html/about.html">About us</a></li>
             <li><a href="../html/contact.html">Contact us</a></li>
           </ul>
       </nav>
   </div>
    
-  <div class="text-align: center">
-    <h2>Buildings </h2>
-    <h3 class="text-align: center">Go back to the previous <a href="../html/gallery.html" class="btn btn-primary btn-lg role="button">Gallery</a></h3> 
-  </div>
+  <div style="text-align:center">
+    <h2>Buildings</h2>
+    <h3>The following are a selection of the work that we have carried out in building our conservatories</h3>
+    <h3>Go to the Previous <a href="../html/gallery2.html" class="btn btn-primary btn-lg role="button">Gallery</a></h3> 
+ </div>
 
 <div class="container">
   <div class="col-sm-3">
@@ -251,21 +260,6 @@
 
 <div class="container">
   <div class="col-sm-3">
-      <img src="../img/gallery9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-  </div>
-  <div class="col-sm-3">
-      <img src="../img/gallery10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-  </div>
-  <div class="col-sm-3">
-      <img src="../img/gallery11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-  </div>
-  <div class="col-sm-3">
-      <img src="../img/gallery12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-  </div>
-</div>
-
-<div class="container">
-  <div class="col-sm-3">
       <img src="../img/gallery13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
@@ -278,6 +272,23 @@
       <img src="../img/gallery16.jpg" class="imgs" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
   </div>
 </div>
+
+<div class="container">
+  <!---<div class="col-sm-3">
+      <img src="../img/gallery9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>-->
+  <div class="col-sm-3">
+      <img src="../img/gallery10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <!---<div class="col-sm-3">
+      <img src="../img/gallery11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>--->
+  <div class="col-sm-3">
+      <img src="../img/gallery12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
+
+
 
 
 <div id="myModal" class="modal">
@@ -324,20 +335,20 @@
         <img class="img1" src="../img/gallery8.jpg"  >
     </div>
 
-    <div class="mySlides">
+    <!---<div class="mySlides">
       <div class="numbertext">9 / 16</div>
       <img class="img1" src="../img/gallery9.jpg"  >
-    </div>
+    </div>-->
 
   <div class="mySlides">
     <div class="numbertext">10 / 16</div>
     <img class="img1" src="../img/gallery10.jpg"  >
   </div>
 
-  <div class="mySlides">
+  <!--<div class="mySlides">
     <div class="numbertext">11 / 16</div>
     <img class="img1" src="../img/gallery11.jpg"  >
-  </div>
+  </div>--->
 
   <div class="mySlides">
     <div class="numbertext">12 / 16</div>
@@ -370,7 +381,8 @@
     <div class="caption-container">
       <p id="caption"></p>
     </div>
-
+    
+    <!---
     <div style="background-color: black">
 
       <div class="container" style="background-color: black">
@@ -405,29 +417,22 @@
           <img class="demo cursor" src="../img/gallery8.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
       </div>
       <div class="col-sm-2">
-          <img class="demo cursor" src="../img/gallery9.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
-      </div>
-      <div class="col-sm-2">
           <img class="demo cursor" src="../img/gallery10.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
       </div>
-      <div class="col-sm-2">
-        <img class="demo cursor" src="../img/gallery11.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
-    </div> 
      <div class="col-sm-2">
       <img class="demo cursor" src="../img/gallery12.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
     </div>
-  </div>
-
+    <div class="col-sm-2">
+          <img class="demo cursor" src="../img/gallery13.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
+      </div>
+      <div class="col-sm-2">
+          <img class="demo cursor" src="../img/gallery14.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
+      </div>
+    </div>
   <div style="background-color: black"><br></div>
 
 
   <div class="container" style="background-color: black">
-    <div class="col-sm-2">
-        <img class="demo cursor" src="../img/gallery13.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
-    </div>
-    <div class="col-sm-2">
-        <img class="demo cursor" src="../img/gallery14.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
-    </div>
     <div class="col-sm-2">
         <img class="demo cursor" src="../img/gallery15.jpg" style="width:100%" onclick="currentSlide(15)" alt="">
     </div>
@@ -435,7 +440,7 @@
         <img class="demo cursor" src="../img/gallery16.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
     </div>
 </div>
-
+-->
 
     </div>
     
@@ -451,9 +456,9 @@
           <div class="col-sm-4">
             <h3>Business hours</h3>
             <p class="footerP"><b>Monday - Friday</b></p>
-            <p class="footerP">9am - 5PM</p>
+            <p class="footerP">9am - 5pm</p>
             <p class="footerP"><b>Saturday</b></p>
-            <p class="footerP">9am - 12:30PM</p>
+            <p class="footerP">9am - 12:30pm</p>
           </div>
           <div class="col-sm-4">
             <h3>Contact us</h3>
@@ -463,7 +468,7 @@
           </div>
           <div class="col-sm-4">
             <h3>Where to find us</h3>        
-            <p class="footerP">5a Koco Building <br />
+            <p class="footerP">Koco Building <br />
               15 The Arches <br />
               Spon End <br />
               Coventry  <br />
