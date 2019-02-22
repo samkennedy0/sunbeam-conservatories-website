@@ -15,6 +15,11 @@
           box-sizing: border-box;
         }
         
+        .imgGrid {
+          height: 200px;
+          width: 100px;
+          padding: 15px;
+        }
         .row > .column {
           padding: 0 8px;
         }
@@ -38,8 +43,10 @@
           padding-top: 50px;
           left: 0;
           top: 0;
+          width: 100%;
+          height: 100%;
           overflow: auto;
-          background-color: black;
+          background: rgba(185, 185, 185, 0.7);
         }
         
         /* Modal Content */
@@ -48,13 +55,13 @@
           background-color: #fefefe;
           margin: auto;
           padding: 0;
-          width: 90%;
+          width: 60%;
           max-width: 1200px;
         }
         
         /* The Close Button */
         .close {
-          color: white;
+          color: black;
           position: absolute;
           top: 10px;
           right: 25px;
@@ -64,7 +71,7 @@
         
         .close:hover,
         .close:focus {
-          color: #999;
+          color: black;
           text-decoration: none;
           cursor: pointer;
         }
@@ -225,51 +232,51 @@
   <div style="text-align:center">
     <h2>Buildings</h2>
     <h3>The following are a selection of the work that we have carried out in building our conservatories</h3>
-    <h3>Go to the Previous <a href="../html/gallery2.html" class="btn btn-primary btn-lg role="button">Gallery</a></h3> 
+    <h3>Go to the Previous <a href="../html/gallery.html" class="btn btn-primary btn-lg role="button">Gallery</a></h3> 
  </div>
 
 <div class="container">
   <div class="col-sm-3">
-    <img src="../img/gallery1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img class="imgGrid" src="../img/gallery1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-    <img src="../img/gallery2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img class="imgGrid" src="../img/gallery2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-    <img src="../img/gallery3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img class="imgGrid" src="../img/gallery3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-    <img src="../img/gallery4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img class="imgGrid" src="../img/gallery4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
 </div>
 
 <div class="container">
     <div class="col-sm-3">
-        <img src="../img/gallery5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <img class="imgGrid" src="../img/gallery5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
     </div>
     <div class="col-sm-3">
-        <img src="../img/gallery6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        <img class="imgGrid" src="../img/gallery6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
     </div>
     <div class="col-sm-3">
-        <img src="../img/gallery7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        <img class="imgGrid" src="../img/gallery7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
     </div>
     <div class="col-sm-3">
-        <img src="../img/gallery8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        <img class="imgGrid" src="../img/gallery8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
     </div>
 </div>
 
 <div class="container">
   <div class="col-sm-3">
-      <img src="../img/gallery13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-      <img src="../img/gallery14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-      <img src="../img/gallery15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
   </div>
   <div class="col-sm-3">
-      <img src="../img/gallery16.jpg" class="imgs" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery16.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -278,13 +285,13 @@
       <img src="../img/gallery9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
   </div>-->
   <div class="col-sm-3">
-      <img src="../img/gallery10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
   </div>
   <!---<div class="col-sm-3">
       <img src="../img/gallery11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
   </div>--->
   <div class="col-sm-3">
-      <img src="../img/gallery12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img class="imgGrid" src="../img/gallery12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
   </div>
 </div>
 
