@@ -100,9 +100,15 @@ p2 {
 
 .navbar-nav {
     font-size: 20px;
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+
+
+
 }
+
+
 .header {
     background-color: rgb(255, 255, 60);
     text-align: center;
@@ -196,4 +202,9 @@ color: white;
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    }
+}
+
+.responsive-image {
+  height: auto;
+  width: 80%;
+}
