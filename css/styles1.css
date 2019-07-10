@@ -11,6 +11,11 @@
     padding: 30px;
 }
 
+h3{
+    color: yellowgreen;
+    font-size: 
+}
+
 /*body { 
     background: url(./cream_dust.png) repeat 0 0;
 }
@@ -97,7 +102,7 @@ p2 {
 }
 
 .div1 { 
-    padding-top: 40x;
+    padding-top: 40px;
     padding-right: 30px;
     padding-bottom: 25px;
     padding-left: 80px;

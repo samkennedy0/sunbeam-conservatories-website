@@ -2,8 +2,8 @@
 <html lang="en-GB">
   
 <head>
-  <title>Sunbeam - Home</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Sunbeam Conservatories & Windows Coventry</title>
+  <link rel="stylesheet" href="./css/styles1.css"> <!--style sheet not working needs to be put after bootstrap!-->
   <link rel="stylesheet" href="./css/slides.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,9 +11,10 @@
   <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <meta charset="utf-8">
   <meta name="description" content="Sunbeam Conservatories & Windows Coventry. Here you will find contact details, examples of previous work as well as what we can offer you!">
-  <meta name="keywords" content="Sunbeam conservatories, Conservatories, Sunbeam, coventry, UPVC windows, UPVC doors, composite doors, patio doors,Bi fold doors,aluminium windows aluminium doors.Conservatories, lean to`s, Victorian conservatories, Edwardian conserrvaries,Orangeries,Garden rooms,Sun rooms,Sun lounges,Porches,P shaped conservatories, T shapedconservatories,hardwoodconservatories,.hardwood windows, glass roofs,conservatory roof repairs, sealed unit repairs, DIY conservatories ,polycarbonate roofs. Conservatories Coventry, Coventry conservatories,Conservatories Warwickshire, Conservatories Midlands, Conservatories Warwick ,Conservatories Kenilworth,Conservatories Leamington Spa, Conservatories Nuneaton, Conservatories Bedworth,Conservatories Stratford Upon Avon,Conservatories Tamworth">
+  <meta name="keywords" content="Sunbeam conservatories, Sunbeam conservatories coventry, Conservatories coventry">
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Sam Kennedy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +22,14 @@
 
 <body>
     <div class="header" style="background-color: white" style="align-content: center">
-        <img src="img/headermono.png" border="0" alt="Header" class="responsive-image">
-      </div>
+        <img src="img/headermono.png" width="80%" alt="Header">
+    </div>
     
       <div class="bodyclass1" style="background-color: slategrey">
           <nav  style="background-color: slategrey" style="color:white" width="80%">
             <div class ="container-fluid">
               <div class="navbar-header">
-              <!----   <a class="pull-left" href="./index.html"><img src="./img/newlogo1.png" height="50" width="80"></a> >-->
+              <!----   <a class="pull-left" href="./index.html"><img src="/newlogo1.png" height="50" width="80"></a> >-->
               </div>
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html"style="color:black">Home</a></li>
@@ -37,31 +38,35 @@
                     Gallery
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="html/gallery.html" >Conservatories</a>
+                    <a class="dropdown-item" href="gallery.html" >Conservatories</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="html/gallery2.html">Buildings</a>
+                    <a class="dropdown-item" href="gallery2.html">Buildings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="gallery3.html">Windows & Doors</a>
                   </div>
           
-                <li><a href="html/about.html" style="color:black">About us</a></li>
-                <li><a href="html/contact.html" style="color:black">Contact us</a></li>
+                <li><a href="about.html" style="color:black">About us</a></li>
+                <li><a href="contact.html" style="color:black">Contact us</a></li>
               </ul>
           </nav>
       </div>
  
-  <h2>Welcome to Sunbeam Conservatories Website (Started 1982)</h2>
+  <h1 class="title">Welcome to Sunbeam Conservatories Website (Started 1982)</h1>
+
+  
 
   
   <!----<div class="slider" style="padding-top: 0%">
 
       <div id="img" >
-        <img class="img" src="./img/slide1.jpg">
+        <img class="img" src="/slide1.jpg">
       </div>
   
     </div>
   
     <script>
   
-      var images = ['./img/best4s.jpg', './img/best6s.jpg', './img/best5s.jpg'];
+      var images = ['/best4s.jpg', '/best6s.jpg', '/best5s.jpg'];
   
       var x = 0;
   
@@ -131,7 +136,7 @@
   <div class="bodyclass1">
    <div class="container-fluid" style="text-align: center">
       <div class="col-sm-4 paddingBottom" >
-      <img src="./img/best7.jpg" width="80%">  
+      <img src="img/best7.jpg" width="80%">  
       <p class="div" style="padding: 20px" >We offer styles you will recognise, which include:
         Orangeries,
         Edwardian conservatories,
@@ -144,14 +149,14 @@
     </div>
   
     <div class="col-sm-4 paddingBottom" >
-          <img src="./img/best6.jpg" width="80%">
+          <img src="img/best6.jpg" width="80%">
           <p class="div" style="padding: 20px">Our conservatories are designed with quality to mind to last over 30 years. With thorough groundwork, insulated bases and high quality brickwork, together with the best insulated long life A rated sealed units </p> 
       
 
     </div>
 
     <div class="col-sm-4 paddingBottom" >
-        <img src="./img/best1.jpg" width="80%">
+        <img src="img/best1.jpg" width="80%">
         <p class="div" style="padding: 20px">We always use  the best products available and install them to the best standards<br></p>
         
 
@@ -161,89 +166,87 @@
 
   </div>
   </div>
-  <div classs="col-sm-10">
-      <ul class="slides" class="pull-left">
-          <input type="radio" name="radio-btn" id="img-1" checked />
-          <li class="slide-container">
-          <div class="slide">
-            <img src="./img/best2.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-6" class="prev">&#x2039;</label>
-            <label for="img-2" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <input type="radio" name="radio-btn" id="img-2" />
-          <li class="slide-container">
-              <div class="slide">
-                <img src="./img/best1.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-1" class="prev">&#x2039;</label>
-            <label for="img-3" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <input type="radio" name="radio-btn" id="img-3" />
-          <li class="slide-container">
-              <div class="slide">
-                <img src="./img/best3.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-2" class="prev">&#x2039;</label>
-            <label for="img-4" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <input type="radio" name="radio-btn" id="img-4" />
-          <li class="slide-container">
-              <div class="slide">
-                <img src="./img/best4.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-3" class="prev">&#x2039;</label>
-            <label for="img-5" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <input type="radio" name="radio-btn" id="img-5" />
-          <li class="slide-container">
-              <div class="slide">
-                <img src="./img/best5.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-4" class="prev">&#x2039;</label>
-            <label for="img-6" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <input type="radio" name="radio-btn" id="img-6" />
-          <li class="slide-container">
-              <div class="slide">
-                <img src="./img/best6.jpg" />
-              </div>
-          <div class="nav">
-            <label for="img-5" class="prev">&#x2039;</label>
-            <label for="img-1" class="next">&#x203a;</label>
-          </div>
-          </li>
-      
-          <li class="nav-dots">
-            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-            <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-            <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-            <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-          </li>
-        </ul>
-      
-        <br>
-        <br>
-      
 
-
+  <div class="visible-lg">
+    <ul class="slides" class="pull-left">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+        <div class="slide">
+          <img src="img/best2.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-6" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/best1.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/best3.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-4" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/best4.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-3" class="prev">&#x2039;</label>
+          <label for="img-5" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-5" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/best5.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-4" class="prev">&#x2039;</label>
+          <label for="img-6" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-6" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/best6.jpg" />
+            </div>
+        <div class="nav">
+          <label for="img-5" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        </li>
+      </ul>
+    
+      <br>
+      <br>
   </div>
 
 
@@ -253,7 +256,7 @@
     
   </div>
 
-  <!--img src="../img/test.jpg" alt="test"--> <!--width ="100" height="100"-->
+  <!--img src="./test.jpg" alt="test"--> <!--width ="100" height="100"-->
   <footer>
     <div class="container">
       <div class="row">
@@ -268,7 +271,7 @@
           <h3>Contact us</h3>
           <p class="footerP">Phone: 07545 955511</p>
           <p class="footerP">Email: tonyparrott123@btinternet.com</p><br>
-          <a href="https://www.facebook.com/sunbeamconservatories"><img src="./img/facebook.png" height="30px" width="200px"></a>
+          <a href="https://www.facebook.com/sunbeamconservatories"><img src="img/facebook.png" height="30px" width="200px"></a>
         </div>
         <div class="col-sm-4">
           <h3>Where to find us</h3>        
